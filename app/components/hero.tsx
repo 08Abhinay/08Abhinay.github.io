@@ -145,7 +145,7 @@ export default function Hero() {
             variants={itemVariants}
             className="mb-8 max-w-3xl mx-auto text-sm sm:text-base text-muted-foreground/80"
           >
-            Master's in Computer Science at Purdue University Fort Wayne | Deep Learning, HPC & AI Research
+            M.S. in Computer Science at Purdue University |  Deep Learning, Vision, Graphics, NLP
           </motion.p>
           <motion.div
             variants={itemVariants}
