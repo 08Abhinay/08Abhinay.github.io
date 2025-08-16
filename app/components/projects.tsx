@@ -26,7 +26,7 @@ export default function Projects() {
         "Integrated MongoDB for scalable data storage",
         "Optimized backend performance using Python and Django"
       ],
-      github: "https://github.com/08Abhinay"
+      github: "https://github.com/08Abhinay/Personality-Prediction"
     },
     {
       title: "Abstractive Text Summarization",
@@ -38,7 +38,7 @@ export default function Projects() {
         "Leveraged TensorFlow, Keras, and scikit-learn",
         "Demonstrated expertise in deep learning for NLP"
       ],
-      github: "https://github.com/08Abhinay"
+      github: "https://github.com/08Abhinay/Article-Summarizer"
     },
     {
       title: "Image Coloring",
@@ -50,7 +50,7 @@ export default function Projects() {
         "Used deep learning for image processing",
         "Enhanced visual quality of grayscale images"
       ],
-      github: "https://github.com/08Abhinay"
+      github: "https://github.com/08Abhinay/Machine-Learning"
     },
     {
       title: "Purdue Marketplace (Telescope)",
@@ -62,7 +62,7 @@ export default function Projects() {
         "Managed GitHub repository for collaboration",
         "Implemented robust functionality and intuitive interface"
       ],
-      github: "https://github.com/08Abhinay"
+      github: "https://github.com/08Abhinay/git-github.com-Lakshmi-swaminathan-Telescope?tab=readme-ov-file"
     }
   ]
 

@@ -40,7 +40,7 @@ export default function Research() {
               <CardContent className="p-4 sm:p-6 lg:p-8">
                 <h3 className="text-xl font-bold text-blue-400 mb-4">Master's Thesis</h3>
                 <p className="text-gray-300 mb-4">
-                  <strong>Addressing Data Scarcity in Medical Imaging:</strong> A Hybrid Approach Combining IJEPA, Stable Diffusion, and GANs for Realistic Synthetic Data Generation <em>(In Progress → Thesis)</em>.
+                  <strong>Addressing Data Scarcity in Medical Imaging:</strong> A Hybrid Approach Combining IJEPA, Stable Diffusion, and GANs for Realistic Synthetic Data Generation <em>(Defended!)</em>.
                 </p>
                 <p className="text-gray-400">
                   Building on IJEPA to provide latent embeddings that condition the generator in a Stable Diffusion + GAN pipeline. Aims to enhance noise modeling and produce high-fidelity synthetic images, improving overall representation learning.
@@ -62,7 +62,7 @@ export default function Research() {
                 <div className="space-y-4">
                   <div>
                     <p className="text-gray-300 mb-2">
-                      <em className="text-yellow-400">Submitted to ACL 2024:</em> Overcoming Black-box Attack Inefficiency with Hybrid and Dynamic N-nary Algorithms to improve model robustness—uses score-based feedback for adversarial perturbations.
+                      <em className="text-yellow-400">Submitted to EMNLP 2025:</em> Overcoming Black-box Attack Inefficiency with Hybrid and Dynamic N-nary Algorithms to improve model robustness—uses score-based feedback for adversarial perturbations.
                     </p>
                   </div>
                   <div>

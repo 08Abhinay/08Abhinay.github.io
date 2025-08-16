@@ -26,7 +26,7 @@ export default function Skills() {
     },
     {
       title: "High-Performance Computing",
-      skills: ["GPU Computing (CUDA)", "Parallel Processing", "HPC Clusters"],
+      skills: ["GPU Computing (CUDA)", "Parallel Processing", "HPC Clusters","Bash Scripting", "SLRUM"],
       icon: "⚡"
     },
     {

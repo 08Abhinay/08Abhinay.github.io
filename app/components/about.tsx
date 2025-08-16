@@ -40,16 +40,6 @@ export default function About() {
               "Previously, I worked as a Software Engineer at Infosys, where I built full-stack applications, developed REST APIs, and worked with cloud platforms such as AWS and Docker. My experience bridges deep learning, scalable cloud solutions, and HPC, shaping both my problem-solving approach and technical expertise. ",
               "I am passionate about building and optimizing AI models, solving challenging research problems, and applying cutting-edge methods to real-world applications. I thrive in environments that foster collaboration, innovation, and continuous learning.  ",
               "If you’d like to collaborate on research, discuss AI innovations, or explore opportunities, feel free to connect!"
-
-
-         
- 
-
- 
-
-
-
-
             ].map((paragraph, index) => (
               <motion.p
                 key={index}
