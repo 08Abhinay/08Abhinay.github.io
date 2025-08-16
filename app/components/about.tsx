@@ -36,10 +36,20 @@ export default function About() {
           <div className="space-y-6 text-muted-foreground leading-relaxed text-sm sm:text-base">
             {[
               "Hi, I'm Abhinay, a researcher at Purdue interested in Computer vision, graphics and NLP. ",
-              "My thesis focused in vision, where I develop a hybrid IJEPA + Diffusion + GAN pipeline to tackle data scarcity in medical imaging. Additionally as a Graduate Researcher at Purdue, I explore NLP adversarial attacks to enhance model robustness, constantly pushing the boundaries of AI security and efficiency.",
-              "Previously, I worked as a Software Engineer at Infosys, where I developed full-stack applications, built REST APIs, and worked extensively with cloud-based tools like AWS and Docker. My experience spans deep learning, scalable cloud solutions, and HPC, shaping my problem-solving approach and technical expertise.",
-              "I am passionate about building and optimizing AI models, tackling complex research problems, and applying cutting-edge AI techniques to real-world applications. I thrive in environments that encourage continuous learning, collaboration, and innovation.",
-              "If you're interested in collaborating on research, discussing AI innovations, or exploring exciting opportunities, feel free to reach out!"
+              "My thesis explored computer vision for medical imaging, where I developed a hybrid I-JEPA + Diffusion + GAN pipeline to address data scarcity and improve generation quality. As a Graduate Researcher, I also investigate adversarial attacks in NLP to strengthen model robustness, advancing AI security and efficiency. ",
+              "Previously, I worked as a Software Engineer at Infosys, where I built full-stack applications, developed REST APIs, and worked with cloud platforms such as AWS and Docker. My experience bridges deep learning, scalable cloud solutions, and HPC, shaping both my problem-solving approach and technical expertise. ",
+              "I am passionate about building and optimizing AI models, solving challenging research problems, and applying cutting-edge methods to real-world applications. I thrive in environments that foster collaboration, innovation, and continuous learning.  ",
+              "If you’d like to collaborate on research, discuss AI innovations, or explore opportunities, feel free to connect!"
+
+
+         
+ 
+
+ 
+
+
+
+
             ].map((paragraph, index) => (
               <motion.p
                 key={index}
