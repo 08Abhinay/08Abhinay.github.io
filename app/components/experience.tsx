@@ -20,7 +20,7 @@ export default function Experience() {
       period: "Aug 2024 – Present",
       responsibilities: [
         "Master's Thesis: Investigating a hybrid IJEPA + Stable Diffusion + GAN pipeline to address data scarcity in medical imaging. Leveraging GPU-based HPC clusters for high-volume synthetic image generation.",
-        "NLP Research: Transitioning from score-based adversarial attacks (ACL submission) to hard-labeled black-box scenarios, developing novel N-nary attack algorithms without model feedback.",
+        "NLP Research: Transitioning from score-based adversarial attacks (EMNLP) to hard-labeled black-box scenarios, developing novel N-nary attack algorithms without model feedback.",
         "Hands-on experience with High-Performance Computing (HPC), training deep learning models on multi-node clusters."
       ]
     },
@@ -29,19 +29,23 @@ export default function Experience() {
       company: "Infosys Limited, Bangalore, India",
       period: "Sept 2021 – Aug 2023",
       responsibilities: [
-        "Led the development of UI menus and new features for the LMS VAM module, using Angular-based FINUX tool, Java, and JavaScript. Utilized UNIX for managing all project code in a cloud-based environment.",
-        "Engineered custom REST APIs using Java, focusing on code reusability and Finacle Scripting. Managed source code with Git.",
-        "Consistently leveraged AWS services (CloudWatch, EC2, ECS, EFS, S3, VPC) in an Agile environment.",
-        "Containerized and deployed application updates by building and pushing Docker images to backend servers after each sprint.",
-        "Automated deployment workflows using Docker, improving efficiency in pushing updates to cloud-based environments."
+        "Built Spring Boot REST APIs integrated with Finacle Script for LMS–VAM (menu validation, redirects, SQL CRUD).",
+        "Refactored modules for modularity and reusability, separating orchestration from Finacle business rules.",
+        "Containerized microservices (fnhttp-va, lm) with Docker for reproducible, versioned releases.",
+        "Coordinated rollouts with infrastructure across staging and production to minimize downtime.",
+        "Monitored and optimized containers on AWS ECS, EC2, EFS, S3, and CloudWatch to improve scalability and reliability.",
+        "Streamlined release cycles and service reliability through standardized containers and modular API architecture."
       ]
     },
     {
-      title: "Career Advisor Intern (Part-Time)",
+      title: "Machine Learning Engineer Intern",
       company: "The People's Corp, Bangalore, India",
-      period: "Jan 2021 – Jul 2021",
+      period: "Jan 2024 – Aug 2024",
       responsibilities: [
-        "Provided personalized career counseling (resume building, interview prep, career planning), tailored to client aspirations."
+        "Architected an enterprise RAG platform using OpenAI GPT-4, LangChain, and Pinecone to enable semantic search across 100k+ documents for cross-functional knowledge management.",
+        "Implemented Cohere ReRank integration to improve retrieval precision, reducing irrelevant responses by ~40% and enhancing answer quality for business-critical queries.",
+        "Deployed containerized RAG services on Kubernetes with a Redis caching layer, supporting high-concurrency workloads and reducing query latency by ~60% for 500+ daily users.",
+        "Collaborated with product and operations teams to build an AI-powered knowledge hub, streamlining access to internal documentation and enabling interactive querying of policies and procedures."
       ]
     },
     {

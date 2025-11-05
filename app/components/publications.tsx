@@ -40,7 +40,7 @@ export default function Publications() {
       venue: "Research Project (Ongoing)",
       description: "Exploring segmentation-aware conditioning techniques to achieve complete unsupervised image generation.",
       status: "Ongoing",
-      tags: ["Computer Vision", "Generative Models", "Unsupervised Learning"],
+      tags: ["Computer Vision", "Generative Models", "Unsupervised Learning", "Segmentation"],
       sourceCode: "https://github.com/08Abhinay",
       paper: "#"
     },

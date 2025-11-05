@@ -38,12 +38,12 @@ export default function Research() {
           >
             <Card className="bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg group">
               <CardContent className="p-4 sm:p-6 lg:p-8">
-                <h3 className="text-xl font-bold text-blue-400 mb-4">Master's Thesis</h3>
+                <h3 className="text-xl font-bold text-blue-400 mb-4">Computer Vision</h3>
                 <p className="text-gray-300 mb-4">
-                  <strong>Addressing Data Scarcity in Medical Imaging:</strong> A Hybrid Approach Combining IJEPA, Stable Diffusion, and GANs for Realistic Synthetic Data Generation <em>(Defended!)</em>.
+                  <strong>Beyond Representation Sampling: Segmentation-Aware Conditioning for Generative Models</strong> — Combining SAM and Mask2Former to build per-instance conditioning vectors for controllable, fully unsupervised image synthesis.
                 </p>
                 <p className="text-gray-400">
-                  Building on IJEPA to provide latent embeddings that condition the generator in a Stable Diffusion + GAN pipeline. Aims to enhance noise modeling and produce high-fidelity synthetic images, improving overall representation learning.
+                  Early experiments show improved FID and gains in precision and recall. Experiments are ongoing toward an ICML 2026 submission.
                 </p>
               </CardContent>
             </Card>
@@ -61,15 +61,11 @@ export default function Research() {
                 <h3 className="text-xl font-bold text-blue-400 mb-4">Natural Language Processing (NLP)</h3>
                 <div className="space-y-4">
                   <div>
-                    <p className="text-gray-300 mb-2">
-                      <em className="text-yellow-400">Submitted to EMNLP 2025:</em> Overcoming Black-box Attack Inefficiency with Hybrid and Dynamic N-nary Algorithms to improve model robustness—uses score-based feedback for adversarial perturbations.
-                    </p>
-                  </div>
-                  <div>
                     <p className="text-gray-300">
-                      <em className="text-green-400">Ongoing:</em> Developing novel algorithms for hard-labeled adversarial attacks where model confidence scores are unavailable, focusing on robust text classification.
+                      <em className="text-green-400">Ongoing:</em> Dynamic Token Field - Developing novel algorithms for hard-labeled adversarial attacks where model confidence scores are unavailable, focusing on robust text classification.
                     </p>
                   </div>
+                  
                 </div>
               </CardContent>
             </Card>
