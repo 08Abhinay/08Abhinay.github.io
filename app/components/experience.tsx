@@ -51,7 +51,7 @@ export default function Experience() {
     {
       title: "Student & Assistant Teacher Intern",
       company: "JSpiders Institute, Bangalore, India",
-      period: "Feb 2021 – Aug 2021",
+      period: "Jan 2021 – Aug 2021",
       responsibilities: [
         "Trained and certified in Java Full-Stack Development, Core and Advanced Java (J2EE), SQL, and PL/SQL."
       ]
