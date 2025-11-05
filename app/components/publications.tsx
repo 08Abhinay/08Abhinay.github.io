@@ -19,16 +19,16 @@ export default function Publications() {
   const publications = [
     {
       title: "Overcoming Black-box Attack Inefficiency with Hybrid and Dynamic N-nary Algorithms",
-      venue: "EMNLP 2025 (Submitted)",
+      venue: "EMNLP 2025",
       description: "Novel approach to improve model robustness using score-based feedback for adversarial perturbations in NLP models.",
-      status: "Under Review",
+      status: "Published",
       tags: ["NLP", "Adversarial Attacks", "Model Robustness"],
       sourceCode: "https://github.com/08Abhinay/Hybrid-Dynamic-Select",
-      paper: "https://github.com/08Abhinay/Hybrid-Dynamic-Select"
+      paper: "https://arxiv.org/abs/2509.20699"
     },
     {
       title: "Addressing Data Scarcity in Medical Imaging: A Hybrid IJEPA + Stable Diffusion + GAN Approach",
-      venue: "Master's Thesis (In Progress)",
+      venue: "Master's Thesis",
       description: "Hybrid pipeline combining IJEPA, Stable Diffusion, and GANs for realistic synthetic medical image generation to address data scarcity.",
       status: "Defended",
       tags: ["Computer Vision", "Medical Imaging", "GANs", "Diffusion Models"],
@@ -36,7 +36,16 @@ export default function Publications() {
       paper: "https://hammer.purdue.edu/articles/thesis/Addressing_Data_Scarcity_in_Medical_Imaging_A_Hybrid_Approach_Combining_IJEPA_Diffusion_and_GANs/29649557?file=56585534"
     },
     {
-      title: "Hard-labeled Adversarial Attacks for Text Classification",
+      title: "Beyond Representation Sampling: Segmentation-Aware Conditioning for Generative Models",
+      venue: "Research Project (Ongoing)",
+      description: "Exploring segmentation-aware conditioning techniques to achieve complete unsupervised image generation.",
+      status: "Ongoing",
+      tags: ["Computer Vision", "Generative Models", "Unsupervised Learning"],
+      sourceCode: "https://github.com/08Abhinay",
+      paper: "#"
+    },
+    {
+      title: "Dynamic Token Field (DTF) - Hard-labeled Adversarial Attacks for Text Classification",
       venue: "Research Project (Ongoing)",
       description: "Developing novel algorithms for adversarial attacks in scenarios where model confidence scores are unavailable.",
       status: "Ongoing",
