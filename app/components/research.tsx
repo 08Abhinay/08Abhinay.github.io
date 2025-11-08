@@ -43,7 +43,7 @@ export default function Research() {
                   <strong>Beyond Representation Sampling: Segmentation-Aware Conditioning for Generative Models</strong> — Combining SAM and Mask2Former to build per-instance conditioning vectors for controllable, fully unsupervised image synthesis.
                 </p>
                 <p className="text-gray-400">
-                  Early experiments show improved FID and gains in precision and recall. Experiments are ongoing toward an ICML 2026 submission.
+                  <em className="text-green-400">Ongoing:</em> Early experiments show improved FID and gains in precision and recall. Experiments are ongoing toward an ICML 2026 submission.
                 </p>
               </CardContent>
             </Card>
