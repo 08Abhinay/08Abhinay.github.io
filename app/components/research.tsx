@@ -40,10 +40,10 @@ export default function Research() {
               <CardContent className="p-4 sm:p-6 lg:p-8">
                 <h3 className="text-xl font-bold text-blue-400 mb-4">Computer Vision</h3>
                 <p className="text-gray-300 mb-4">
-                  <strong>Beyond Representation Sampling: Segmentation-Aware Conditioning for Generative Models</strong> — Combining SAM and Mask2Former to build per-instance conditioning vectors for controllable, fully unsupervised image synthesis.
+                  <em className="text-green-400">Ongoing:</em> <strong>Beyond Representation Sampling: Segmentation-Aware Conditioning for Generative Models</strong> — Combining SAM and Mask2Former to build per-instance conditioning vectors for controllable, fully unsupervised image synthesis.
                 </p>
                 <p className="text-gray-400">
-                  <em className="text-green-400">Ongoing:</em> Early experiments show improved FID and gains in precision and recall. Experiments are ongoing toward an ICML 2026 submission.
+                  Early experiments show improved FID and gains in precision and recall. Experiments are ongoing toward an ICML 2026 submission.
                 </p>
               </CardContent>
             </Card>
