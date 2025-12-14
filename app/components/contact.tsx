@@ -1,31 +1,23 @@
 "use client"
 
+import { useState } from "react"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
-import * as z from "zod"
 import { motion } from "framer-motion"
-import { Mail, Linkedin, Github, Phone } from 'lucide-react'
+import { Mail, Linkedin, Github, Phone } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-
-const formSchema = z.object({
-  name: z.string().min(2, {
-    message: "Name must be at least 2 characters.",
-  }),
-  email: z.string().email({
-    message: "Please enter a valid email address.",
-  }),
-  message: z.string().min(10, {
-    message: "Message must be at least 10 characters.",
-  }),
-})
+import { contactFormSchema, type ContactFormValues } from "@/lib/schemas/contact"
 
 export default function Contact() {
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
+  const [serverFeedback, setServerFeedback] = useState<{ type: "success" | "error"; message: string } | null>(null)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  const form = useForm<ContactFormValues>({
+    resolver: zodResolver(contactFormSchema),
     defaultValues: {
       name: "",
       email: "",
@@ -33,9 +25,38 @@ export default function Contact() {
     },
   })
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values)
-    // Handle form submission here
+  async function onSubmit(values: ContactFormValues) {
+    try {
+      setIsSubmitting(true)
+      setServerFeedback(null)
+
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      })
+
+      if (!response.ok) {
+        const data = await response.json().catch(() => null)
+        throw new Error(data?.error || "Unable to send your message. Please try again.")
+      }
+
+      setServerFeedback({
+        type: "success",
+        message: "Thanks for reaching out! I will get back to you soon.",
+      })
+      form.reset()
+    } catch (error) {
+      const message = error instanceof Error ? error.message : "Something went wrong. Please try again."
+      setServerFeedback({
+        type: "error",
+        message,
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -172,9 +193,18 @@ export default function Contact() {
                     </FormItem>
                   )}
                 />
-                <Button type="submit" className="w-full">
-                  Send Message
+                <Button type="submit" className="w-full" disabled={isSubmitting}>
+                  {isSubmitting ? "Sending..." : "Send Message"}
                 </Button>
+                {serverFeedback && (
+                  <p
+                    className={`text-sm ${serverFeedback.type === "success" ? "text-green-400" : "text-red-400"}`}
+                    role="status"
+                    aria-live="polite"
+                  >
+                    {serverFeedback.message}
+                  </p>
+                )}
               </form>
             </Form>
           </motion.div>
