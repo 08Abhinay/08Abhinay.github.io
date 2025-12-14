@@ -15,7 +15,7 @@ const nextConfig = {
   },
 
   // ─── Static export (next export → out/) ──────────────────────────────────────
-  output: 'export',
+  // output: 'export',
 
   // ─── (Optional) silence the dev “cross‐origin” warning ───────────────────────
   // change the URL to whatever host/port you’re using in dev
