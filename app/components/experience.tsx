@@ -17,7 +17,7 @@ export default function Experience() {
     {
       title: "Graduate Research Assistant",
       company: "Purdue University, Indiana, Fort Wayne",
-      period: "Aug 2024 – Present",
+      period: "Aug 2024 – Aug 2025",
       responsibilities: [
         "Master's Thesis: Investigating a hybrid IJEPA + Stable Diffusion + GAN pipeline to address data scarcity in medical imaging. Leveraging GPU-based HPC clusters for high-volume synthetic image generation.",
         "NLP Research: Transitioning from score-based adversarial attacks (EMNLP) to hard-labeled black-box scenarios, developing novel N-nary attack algorithms without model feedback.",

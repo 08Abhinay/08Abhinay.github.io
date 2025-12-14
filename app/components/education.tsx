@@ -14,14 +14,14 @@ export default function Education() {
     {
       degree: "Master's in Computer Science",
       institution: "Purdue University Fort Wayne",
-      period: "August 2023 – Present",
+      period: "Aug 2023 – Aug 2025",
       location: "Fort Wayne, Indiana",
       focus: "Deep Learning, High-Performance Computing, AI Research"
     },
     {
       degree: "Bachelor of Science in Mechanical Engineering",
       institution: "Amrita Vishwa Vidyapeetham University",
-      period: "July 2017 – May 2021",
+      period: "Jul 2017 – May 2021",
       location: "Bangalore, India",
       focus: "Engineering Fundamentals, Problem Solving"
     }
