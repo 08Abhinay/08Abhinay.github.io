@@ -35,20 +35,20 @@ export default function About() {
           </motion.h2>
           <div className="space-y-6 text-muted-foreground leading-relaxed text-sm sm:text-base">
             {[
-              "Hi, I'm Abhinay, a researcher at Purdue interested in Computer vision, graphics and NLP. ",
-              "My thesis explored computer vision for medical imaging, where I developed a hybrid I-JEPA + Diffusion + GAN pipeline to address data scarcity and improve generation quality. As a Graduate Researcher, I also investigate adversarial attacks in NLP to strengthen model robustness, advancing AI security and efficiency. ",
-              "Previously, I worked as a Software Engineer at Infosys, where I built full-stack applications, developed REST APIs, and worked with cloud platforms such as AWS and Docker. My experience bridges deep learning, scalable cloud solutions, and HPC, shaping both my problem-solving approach and technical expertise. ",
-              "I am passionate about building and optimizing AI models, solving challenging research problems, and applying cutting-edge methods to real-world applications. I thrive in environments that foster collaboration, innovation, and continuous learning.  ",
-              "If you’d like to collaborate on research, discuss AI innovations, or explore opportunities, feel free to connect!"
+              "Hi, I’m Abhinay. I’m a researcher at Purdue interested in computer vision, graphics, and NLP.",
+              "Right now, I spend most of my time on generative models and representation learning. I care about outputs that are not just high-quality, but also structured, controllable, and consistent. I’m especially drawn to problems where models must respect objects, boundaries, and geometry instead of treating everything as one texture.",
+              "My master’s thesis was in medical imaging generation. I built a hybrid pipeline that combined self-supervised representations with diffusion and GAN-based synthesis to work in low-data settings. That experience made me care a lot about practical constraints like limited data, noisy signals, and the gap between something that looks good and something you can trust.",
+              "Currently, I’m exploring segmentation-aware conditioning for generation, using signals from models like SAM and Mask2Former to build per-instance conditioning that improves local structure and boundaries. In parallel, I work on adversarial robustness for NLP, focusing on query-efficient black-box attacks and evaluation tools for real deployed classifiers.",
+              "I enjoy collaborating with people who run careful experiments, move fast, and stay honest about what works and what doesn’t. If you’re working on generative modeling, robust NLP, or anything adjacent, feel free to reach out."
             ].map((paragraph, index) => (
               <motion.p
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ 
-                  duration: 0.6, 
+                transition={{
+                  duration: 0.6,
                   delay: index * 0.1,
-                  ease: [0.25, 0.46, 0.45, 0.94]
+                  ease: [0.25, 0.46, 0.45, 0.94],
                 }}
                 viewport={{ once: true, margin: "-50px" }}
                 className={index === 0 || index === 4 ? "font-medium text-foreground" : ""}
@@ -57,6 +57,8 @@ export default function About() {
               </motion.p>
             ))}
           </div>
+
+
         </motion.div>
       </motion.div>
     </section>
