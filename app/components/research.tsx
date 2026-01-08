@@ -50,26 +50,34 @@ export default function Research() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94], delay: 0.2 }}
-            viewport={{ once: true, margin: "-50px" }}
-            whileHover={{ y: -5, scale: 1.01 }}
-          >
-            <Card className="bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg group">
-              <CardContent className="p-4 sm:p-6 lg:p-8">
-                <h3 className="text-xl font-bold text-blue-400 mb-4">Natural Language Processing (NLP)</h3>
-                <div className="space-y-4">
-                  <div>
-                    <p className="text-gray-300">
-                      <em className="text-green-400">Ongoing:</em> Dynamic Token Field - Developing novel algorithms for hard-labeled adversarial attacks where model confidence scores are unavailable, focusing on robust text classification.
-                    </p>
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94], delay: 0.2 }}
+              viewport={{ once: true, margin: "-50px" }}
+              whileHover={{ y: -5, scale: 1.01 }}
+            >
+              <Card className="bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg group">
+                <CardContent className="p-4 sm:p-6 lg:p-8">
+                  <h3 className="text-xl font-bold text-blue-400 mb-4">Natural Language Processing (NLP)</h3>
+                  <div className="space-y-4">
+                    <div>
+                      <p className="text-gray-300 mb-3">
+                        <em className="text-purple-400">Submitted:</em>{" "}
+                        <strong>CONQUEST: An Efficient Attack for the Constrained Hard-label Setting</strong> — 
+                        designing query-efficient adversarial attacks when only top-1 labels are available, with 
+                        strict perturbation and budget constraints.
+                      </p>
+                      <p className="text-gray-400">
+                        The method combines adaptive search over discrete token edits with constraint-aware scoring,
+                        significantly reducing query counts compared to existing hard-label baselines on text
+                        classification benchmarks. The work is currently under review.
+                      </p>
+                    </div>
                   </div>
-                  
-                </div>
-              </CardContent>
-            </Card>
-          </motion.div>
+                </CardContent>
+              </Card>
+            </motion.div>
+
         </div>
       </motion.div>
     </section>

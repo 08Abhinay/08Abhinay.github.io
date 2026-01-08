@@ -45,10 +45,10 @@ export default function Publications() {
       paper: "#"
     },
     {
-      title: "Dynamic Token Field (DTF) - Hard-labeled Adversarial Attacks for Text Classification",
-      venue: "Research Project (Ongoing)",
+      title: "CONQUEST: An Efficient Attack for the Constrained Hard-label Setting",
+      venue: "Research Project (Submitted)",
       description: "Developing novel algorithms for adversarial attacks in scenarios where model confidence scores are unavailable.",
-      status: "Ongoing",
+      status: "Submitted",
       tags: ["NLP", "Adversarial ML", "Text Classification"],
       sourceCode: "https://github.com/08Abhinay",
       paper: "#"
@@ -63,6 +63,8 @@ export default function Publications() {
         return "bg-blue-500/20 text-blue-400 border-blue-500/30"
       case "Ongoing":
         return "bg-green-500/20 text-green-400 border-green-500/30"
+      case "Submitted":
+        return "bg-purple-500/20 text-purple-400 border-purple-500/30"
       default:
         return "bg-gray-500/20 text-gray-400 border-gray-500/30"
     }
